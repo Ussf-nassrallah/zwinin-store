@@ -1,0 +1,49 @@
+@import '../../styles/scss/helpers/helpers';
+
+.checkoutProduct {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 3rem;
+    margin-bottom: 1rem;
+
+    &-img {
+        width: 230px;
+    }
+
+    &-info {
+        padding-left: 3rem;
+
+        p {
+            font-size: 16px;
+
+            &:not(:last-child) {
+                margin-bottom: .8rem;
+            }
+        }
+
+        &__title {
+            font-weight: bold;
+            font-size: 1.3rem !important;
+        }
+
+        &__category {
+            color: $primary-clr;
+        }
+
+        &__price {
+            font-weight: bold;
+            color: #222;
+        }
+
+        .remove-btn {
+            border: none;
+            outline: none;
+            display: inline-block;
+            padding: .8rem;
+            background-color: $primary-clr;
+            color: $white;
+            cursor: pointer;
+        }
+    }
+}

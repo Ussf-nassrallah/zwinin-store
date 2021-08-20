@@ -1,0 +1,37 @@
+@import '../styles/scss/helpers/helpers';
+
+.category {
+    background-color: #fff;
+    padding: 2rem;
+    text-transform: capitalize;
+    z-index: 2;
+    transition: box-shadow 400ms ease-in-out;
+    cursor: pointer;
+
+    &-img {
+        padding: 1rem 0;
+    }
+
+    &-title {
+        font-size: 1.5rem;
+    }
+
+    &-link {
+        color: $primary-clr;
+        display: flex;
+        align-items: center;
+
+        .icon {
+            font-size: 1rem;
+            margin-right: .5rem;
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &:hover {
+        box-shadow: 5px 10px 20px 0px rgba(0,0,0,0.2);
+    }
+}

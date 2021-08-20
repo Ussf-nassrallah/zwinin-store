@@ -1,0 +1,54 @@
+@import '../../styles/scss/helpers/helpers';
+
+%flex {
+    display: flex;
+    align-items: center;
+}
+
+.ub {
+    background-color: $primary-clr;
+    color: $white;
+
+    &-content {
+        @extend %flex;
+        justify-content: space-between;
+        padding: .5rem 1rem;
+
+        ul {
+            @extend %flex;
+            text-transform: capitalize;
+        }
+
+        &__contact {
+            li {
+                @extend %flex;
+
+                .icon {
+                    font-size: 1.2rem;
+                    margin-right: .5rem;
+                }
+
+                &:not(:first-child) {
+                    margin-left: 1rem;
+                }
+            }
+        }
+
+        &__cta {
+            .link {
+                cursor: pointer;
+                color: $white;
+                
+                &:hover {
+                    text-decoration: underline;
+                }
+
+                &:not(:first-child) {
+                    margin-left: 1rem;
+                    padding-left: 1rem;
+                    border-left: 1px solid $white;
+                }
+            }
+        }
+    }
+}

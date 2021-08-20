@@ -1,0 +1,76 @@
+@import '../../styles/scss/helpers/helpers';
+
+.home {
+    max-width: 1600px;
+    width: 100%;
+    padding: 0 1rem;
+    margin:  0 auto;
+    overflow: hidden;
+
+    .slider {
+        width: 100%;
+        display: flex;
+        overflow: hidden;
+        position: relative;
+
+        .slide {
+            min-width: 100%;
+            transition: transform 300ms ease;
+
+            img {
+                mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+            }
+        }
+
+        .slide-control {
+            position: absolute;
+            top: 30%;
+            transform: translateY(-30%);
+            width: 100%;
+
+            button {
+                background-color: none;
+                border: none;
+                outline: none;
+            }
+
+            .arrow {
+                font-size: 3rem;
+
+                &-left {
+                    position: absolute;
+                    left:0;
+                }
+
+                &-right {
+                    position: absolute;
+                    right:0;
+                }
+            }
+        }
+    }
+
+    .categories {
+        @include grid(3, 1rem);
+        padding: 0 1rem;
+        padding-bottom: 5rem;
+        margin-top: -15rem;
+    }
+
+    .services {
+        background-color: $white;
+        margin: 0 1rem;
+        padding: 5rem 2rem;
+        margin-bottom: 5rem;
+
+        h2 {
+            text-transform: capitalize;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        &-items {
+            @include grid(4, 1rem);
+        }
+    }
+}

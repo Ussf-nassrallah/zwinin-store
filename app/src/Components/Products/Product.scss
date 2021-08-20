@@ -1,0 +1,40 @@
+@import '../../styles/scss/helpers/helpers';
+
+.product {
+    background-color: #fff;
+    padding: 1.5rem 1rem;
+
+    &-title {
+        font-weight: 400;
+    }
+
+    &-category {
+        color: $primary-clr;
+        margin: .5rem 0;
+    }
+
+    &-price {
+        font-weight: bold;
+        color: #222;
+        font-size: 1rem;
+    }
+
+    &-ctaBtn {
+        border: none;
+        outline: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: .7rem;
+        width: 100%;
+        background-color: $primary-clr;
+        color: $white;
+        margin-top: 1rem;
+        font-size: 1rem;
+        cursor: pointer;
+
+        .icon {
+            margin-right: .5rem;
+        }
+    }
+}

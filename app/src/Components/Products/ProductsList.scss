@@ -1,0 +1,7 @@
+@import '../../styles/scss/helpers/helpers';
+
+.products-list {
+    @include grid(4, 1rem);
+    margin: 0 1rem;
+    padding-bottom: 5rem;
+}
